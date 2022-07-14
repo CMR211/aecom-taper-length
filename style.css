@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    --clr-bg: rgba(170, 224, 255, 0.1);
+    --clr-outline: rgba(170, 224, 255, 0.3);
+    --border: 2px solid var(--clr-outline);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+input {
+    font-size: 16px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: var(--border);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+input:active,
+input:focus {
+    border-color: var(--clr-outline);
+}
+
+p.output {
+    font-size: 1.1em;
+    text-align: right;
+}
+
+p.output:first-of-type,
+p.output:nth-of-type(4) {
+    margin-bottom: 1.5em;
+}
